@@ -1,5 +1,11 @@
 # git-log-merge
 
+A small addition for `git log` to view all the commits that were merged on a certain merge commit.
+
+**ATTENTION:**
+
+For `git log-merge` to work, please make that you regularly merge your commits with `git merge --no-ff`.
+
 ## Installation
 
 ### Clone This Repository As A Subtree In Your Project
@@ -27,6 +33,24 @@ git config alias.log-merge '!sh ./git-log-merge/git-log-merge.sh "${args[@]}"'
   ```
   git log-merge
   ```
+
+### Output Example
+
+Executed:
+```
+git log-merge 1289b09443721efde9d1ba97aab821d604f9f6ed --oneline
+```
+
+Resulted with:
+```
+*   1289b09 Merge branch 'dev-tal-test' into development-test
+|\
+| * ac0b6b6 (dev-tal) Fix Add Question Forms
+| * 092a45b Testing Question Forms And Language
+| * af19750 `dev-tal` init
+* a3c059b (development) Merge commit '4f1592d25f9a2acc69fb19887b72cd91d926cb43' as 'git-merge-and-ignore'
+* 4f1592d Squashed 'git-merge-and-ignore/' content from commit 7bd4834
+```
 
 ## Check For Updates
 
