@@ -1,3 +1,5 @@
+> v1.0.0
+
 # git-log-merge
 
 A small addition for `git log` to view all the commits that were merged on a certain merge commit.
