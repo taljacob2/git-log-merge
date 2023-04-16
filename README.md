@@ -6,7 +6,7 @@ A small addition for `git log` to view all the commits that were merged on a cer
 
 **ATTENTION:**
 
-For `git log-merge` to work, please make that you regularly merge your commits with `git merge --no-ff`.
+For `git log-merge` to work, please make sure that you regularly merge your commits with `git merge --no-ff`.
 
 ## Installation
 
